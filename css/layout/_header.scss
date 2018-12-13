@@ -1,0 +1,56 @@
+@keyframes heart {
+    from {transform:translate(-50%,-50%) scale(1)}
+    to {transform: translate(-50%,-50%) scale(8)}
+}
+@keyframes tinder {
+    from {transform:scale(1)}
+    to {transform:scale(1.05)}
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right bottom,#fff,#fff,#fff,#fff,#fff,#f7f4ff,#f3e8fd,#f1dbf9,#f5bce8,#fd99c9,#ff749e,#fd5068);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -3;
+    .tinder{
+        img{
+        width: 300px;
+        height: 300px;
+        animation-name: tinder;
+        animation-duration:2s;
+        animation-iteration-count:infinite;
+        animation-timing-function:linear;
+        animation-direction: alternate;
+        }
+        &::before{
+        content:'❤️';
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        opacity:0.025;
+        animation-name: heart;
+        animation-duration:15s;
+        animation-iteration-count:infinite;
+        animation-timing-function:linear;
+        animation-direction: alternate;
+        }
+    }
+    h1{
+        text-transform: uppercase;
+        color: crimson;
+        font-weight: normal;
+        letter-spacing: 2px;
+        font-size: 42px;
+    }
+    p{
+        color: rgb(54, 54, 54);
+        font-size: 18px;
+        margin: 0;
+    }
+}

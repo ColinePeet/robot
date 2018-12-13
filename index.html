@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="tinder">
+            <img src="img/tinder.svg" alt="">
+        </div>
+        <h1>meet a 'borg</h1>
+        <p>Ca va pécho chez les robots</p>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Faites votre choix</h2>
+            <p>Il y a <span class="hommes">hommes</span> et <span class="femmes">femmes</span></p>
+            <p>Robot ipsum Picoist encephaloform cortropic Filclinic Nippoploid kilolytic zoate. Vesicoity levoparous
+                Egyptococcus stepsepalous stenoales sexuoling ochllyze xeraceae tarsorrhea taxthymia. Cytococcus
+                cheirify gynaecoetic tristomy triboness bathyac conplastic siderogenesis ophioatory egenous. Myary
+                cobaltofuge orphobe pneumonform Angloplex thalassoodont stethometric. Pathoholic newance poikilocline
+                technographer desderma cuprless anthrostat hexgon cyanoicide. Pneumonozyme dendrism exbisect
+                methylphage iridicoable hemoscope anthropomere.</p>
+            <div class="buttons">
+                <button class="everyone" data-filter="All">Afficher tout le monde</button>
+                <button class="button-male" data-filter="Male">Afficher tous les hommes</button>
+                <button class="button-female" data-filter="Female">Afficher toutes les femmes</button>
+            </div>
+        </section>
+        <!-- contenu handlebars -->
+        <section class="robots-section" id="container">
+
+        </section>
+    </main>
+
+    </section>
+    <!-- script handlebars -->
+    <script id="entry-template" type="text/x-handlebars-template">
+                <div class="robots" data-gender="{{gender}}">
+                    <h3>{{first_name}} <span class="bold">{{last_name}}</span> </h3>
+                    <div class="img-robot" data-gender="{{gender}}">
+                        <p class="type"><span class="bold">Type : </span>{{type}}</p>
+                        <p class="language"><span class="bold">Langue parlée :<br></span>{{language}}</p>
+                        <img src="{{portrait}}" alt="">
+                    </div>
+                    <p>{{description}}</p>
+                </div>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

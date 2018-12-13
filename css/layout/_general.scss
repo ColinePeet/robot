@@ -1,0 +1,26 @@
+::selection{
+    background: lightpink;
+}
+p{
+    color: rgb(54, 54, 54);
+    font-size: 15px;
+    line-height: 23px;
+}
+.bold{
+    font-weight: bold;
+} 
+
+button{
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 3px;
+}
+.button-male{
+    background-color: lightcyan;
+    border: 1px solid lightblue;
+}
+.button-female{
+    background-color: rgb(255, 214, 221);
+    border: 1px solid rgb(255, 157, 190);
+}
